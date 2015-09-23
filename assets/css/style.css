@@ -173,7 +173,7 @@ footer {
     font-size: 15px;
     text-align: center;
     font-weight: 900;
-    background-color: rgb(35, 133, 161);
+    background-color: rgba(35, 133, 161, 0.8);
     color: #fff;
 }
 
