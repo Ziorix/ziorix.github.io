@@ -22,8 +22,45 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    #contactusnow {
-        margin-right: 25px;
+    .content-section-a {
+        padding: 50px 0;
+        background-color: #f8f8f8;
+    }
+    .animateDelay2 {
+        -webkit-animation-delay: 1.3s;
+        -moz-animation-delay: 1.3s;
+        -o-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+    }
+    .fadeIn {
+        -webkit-animation: fadeIn 1s ease;
+        -moz-animation: fadeIn 1s ease;
+        -o-animation: fadeIn 1s ease;
+        animation: fadeIn 1s ease;
+        -webkit-animation-fill-mode: backwards;
+        -moz-animation-fill-mode: backwards;
+        -o-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+    }  
+    .content-section-b {
+        padding: 50px 0;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .betop {
+        position: fixed;
+        right: 9px;
+        bottom: 100px;
+        width: 66px;
+        height: 67px;
+        background: transparent url(http://3gimg.qq.com/qq_product_operations/im/mac/4/betop.png) no-repeat 0 0;
+        z-index: 900;
+    }
+    
+    .section-heading-spacer {
+        float: left;
+        width: 200px;
+        border-top: 3px solid #e7e7e7;
     }
     </style>
     <style type="text/css">
@@ -63,7 +100,8 @@
                     <li><a href="contact.html">联系我们</a></li>
                 </ul>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" />
+                    <!-- <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" /> -->
+                    <p style="padding-top: 15px;font-weight:300;color:white;font-size:21pt;">Hackcraft</p>
                 </a>
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
@@ -128,6 +166,10 @@
             </div>
         </div>
     </div>
+
+    <aside id="sdnav" class="fadeIn animateDelay2">
+        <a href="#home" id="betop" class="betop"></a>
+    </aside>
     <footer>
         © 2015 hackcraft.ziorix.com | Webpage Designed By <a href="http://ziorix.com">@ZS</a>
         <br> Sponsored By <a href="http://ziorix.com">@ZS</a>, <a href="http://www.weibo.com/howgelivable">曾老师</a> 和 <a href="http://www.bobiscoming.com">聚力星系论坛</a>
@@ -152,6 +194,23 @@
         var getImgInsert = document.getElementById('insertImg');
         getImgInsert.appendChild(GetQQGroupImage);
     }
+    </script>
+    <script type="text/javascript">
+        $("#betop").click(function(q) {
+            q.preventDefault();
+            $("html body").animate({
+                scrollTop: 0
+            }, 1000, function() {})
+        });
+        $(window).scroll(function() {
+            var q = $(window).scrollTop();
+            if (q > 0) {
+                $("#betop").fadeIn()
+            } else {
+                $("#betop").fadeOut()
+            }
+        });
+
     </script>
     <!-- <script src="assets/js/custom.js"></script> -->
 </body>

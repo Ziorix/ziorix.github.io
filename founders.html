@@ -26,11 +26,35 @@
         padding: 50px 0;
         background-color: #f8f8f8;
     }
-    
+    .animateDelay2 {
+        -webkit-animation-delay: 1.3s;
+        -moz-animation-delay: 1.3s;
+        -o-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+    }
+    .fadeIn {
+        -webkit-animation: fadeIn 1s ease;
+        -moz-animation: fadeIn 1s ease;
+        -o-animation: fadeIn 1s ease;
+        animation: fadeIn 1s ease;
+        -webkit-animation-fill-mode: backwards;
+        -moz-animation-fill-mode: backwards;
+        -o-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+    }  
     .content-section-b {
         padding: 50px 0;
         border-top: 1px solid #e7e7e7;
         border-bottom: 1px solid #e7e7e7;
+    }
+    .betop {
+        position: fixed;
+        right: 9px;
+        bottom: 100px;
+        width: 66px;
+        height: 67px;
+        background: transparent url(http://3gimg.qq.com/qq_product_operations/im/mac/4/betop.png) no-repeat 0 0;
+        z-index: 900;
     }
     
     .section-heading-spacer {
@@ -69,7 +93,8 @@
                     </ul>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" />
+                    <!-- <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" /> -->
+                    <p style="padding-top: 15px;font-weight:300;color:white;font-size:21pt;">Hackcraft</p>
                 </a>
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
@@ -97,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-sm-6">
-                        <hr class="section-heading-spacer">
+                        <!-- <hr class="section-heading-spacer"> -->
                         <div class="clearfix"></div>
                         <h2 class="section-heading"><span class="label label-danger">周松 - ZS &nbsp;&nbsp; Founder</span></h2>
                         <p style="margin-top: 10px;" class="lead">我是高三学生党，出国党，美国。在吉林长春吉林大学附属中学高中部上学。姑且算是上学。似乎大概倾向于选择计算机作为专业。技术，很宅。资深OSX党。测试智商146，属于开心的话学什么都很快，不开心看都不看一眼的类型，小学5年级学会二次函数的应用，然而后来数学太闹心不喜欢学，开始乱七八糟学了一大堆奇怪的东西。执着的认为分布式云计算改变世界。年轻的码农，编码经验4年左右，C/C++为管用语言，只是因为曾经是学过算法竞赛的苦逼。会写Java，但是并不是很喜欢写。JavaScript包括Node.js有一定的了解，改写过Hexo引擎的代码。会写PHP，最近经常在另外两台服务器上写代码。熟悉算法开发，熟练使用C++的STL，略懂iOS游戏引擎，相对比较熟悉网站前端开发，设计了这个网站。搭建过的服务器很多，Linux/Unix命令非常熟悉，因为最近服务器作业增多正在学习VIM。熟悉远程登陆和用户机制，略懂计算机组成运算原理，略懂关联性数据库操作等。我的Github ID是<a href="https://github.com/RoyTimes/">@RoyTimes</a>然而目前还是没有什么厉害的项目，期待和大家认识，相信我能学到的有很多。</p>
@@ -151,7 +176,7 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading"><span class="label label-warning">栾泓舟 - Carina &nbsp;&nbsp;  Special Guest</span></h2>
+                        <h2 class="section-heading"><span class="label label-danger">栾泓舟 - Carina &nbsp;&nbsp;  Founder</span></h2>
                         <p style="margin-top: 10px;" class="lead">
                         </p>
                     </div>
@@ -161,6 +186,11 @@
                 </div>
             </div>
         </div>
+
+    <aside id="sdnav" class="fadeIn animateDelay2">
+        <a href="#home" id="betop" class="betop"></a>
+    </aside>
+
     <footer>
         © 2015 hackcraft.ziorix.com | Webpage Designed By <a href="http://ziorix.com">@ZS</a>
         <br> Sponsored By <a href="http://ziorix.com">@ZS</a>, <a href="http://www.weibo.com/howgelivable">曾老师</a> 和 <a href="http://www.bobiscoming.com">聚力星系论坛</a>
@@ -175,6 +205,23 @@
     <script src="assets/js/jquery.easing.min.js"></script>
     <!-- CUSTOM SCRIPTS   -->
     <!-- <script src="assets/js/custom.js"></script> -->
+    <script type="text/javascript">
+        $("#betop").click(function(q) {
+            q.preventDefault();
+            $("html body").animate({
+                scrollTop: 0
+            }, 1000, function() {})
+        });
+        $(window).scroll(function() {
+            var q = $(window).scrollTop();
+            if (q > 0) {
+                $("#betop").fadeIn()
+            } else {
+                $("#betop").fadeOut()
+            }
+        });
+
+    </script>
 </body>
 
 </html>

@@ -43,9 +43,11 @@ section {
     NAVBAR STYLES
 ==================================*/
 .navbar-default {
-    background-color: rgb(35, 133, 161);
+    /*opacity: 0.5;*/
+    background-color: rgba(35, 133, 161, 0.6);
     border-color: transparent;
     color: #fff;
+
 }
 
     .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
