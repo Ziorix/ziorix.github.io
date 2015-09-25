@@ -26,12 +26,14 @@
         padding: 50px 0;
         background-color: #f8f8f8;
     }
+    
     .animateDelay2 {
         -webkit-animation-delay: 1.3s;
         -moz-animation-delay: 1.3s;
         -o-animation-delay: 1.3s;
         animation-delay: 1.3s;
     }
+    
     .fadeIn {
         -webkit-animation: fadeIn 1s ease;
         -moz-animation: fadeIn 1s ease;
@@ -41,12 +43,14 @@
         -moz-animation-fill-mode: backwards;
         -o-animation-fill-mode: backwards;
         animation-fill-mode: backwards;
-    }  
+    }
+    
     .content-section-b {
         padding: 50px 0;
         border-top: 1px solid #e7e7e7;
         border-bottom: 1px solid #e7e7e7;
     }
+    
     .betop {
         position: fixed;
         right: 9px;
@@ -101,7 +105,8 @@
                 </ul>
                 <a class="navbar-brand" href="index.html">
                     <!-- <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" /> -->
-                    <p style="padding-left: 10px;padding-top: 15px;font-weight:lighter;color:white;font-size:155%;">Hackcraft</p>
+                    <p style="padding-left: 10px;padding-top: 15px;font-weight:lighter;color:white;font-size:155%;"><span class="glyphicon glyphicon-fire"></span>&nbsp;<span style="font-size: 130%;">Contact Us</span>&nbsp;&nbsp;页面施工中..</p>
+                    <p></p>
                 </a>
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
@@ -115,32 +120,60 @@
         </div>
     </div>
     <div id="main" style="padding-top:20px;">
-        <!-- <img style="height:300px; weight:300px;" src="http://i1.tietuku.com/f2d86e416ea2c5c4.png"> -->
-        <div id="contact" class="content-section-a" style="padding-bottom:500px;">
+        <div id="contact" style="padding-top:100px;padding-bottom:500px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading"></h2>
-                        <p style="font-weight:300;line-height:1.4;font-size:21pt;">
-                            <h2><span class="glyphicon glyphicon-heart"></span> &nbsp; Contact Us</h2>
-                            <br>
-                            <br> 赶快和基友妹子们组队加入比赛! 到底哪支团队会得到终极奖励。
-                            <br> 请加入QQ群了解详情，点击下方红色摁钮弹出二维码。
-                            <br> 加群请验证: "来自官网"。
-                            <br> 群号: 489743138
-                            <br> 此处待续＝＝交给文案了!
-                        </p>
-                        <br>
                         <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
-                            加入史上最牛逼团队
+                            点击扫码加群
                         </button>
-                    </div>
-                    <div style＝ "margin-top: 30px;">
-                        <!-- <div class="col-lg-4 col-lg-offset-1 col-sm-6">
-                            <img class="img-responsive" src="assets/img/photo1.JPG" alt="">
-                        </div> -->
+                        <br>
+                        <br>
+                        <div>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" id="TabView">
+                                <li role="presentation" class="active"><a href="#group" aria-controls="group" role="tab" data-toggle="tab">QQ群信息</a></li>
+                                <li class="dropdown">
+                                    <a href="" id="Drop" class="dropdown-toggle" data-toggle="dropdown">创始人联系信息<b class="caret"></b></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                                        <li role="presentation"><a href="#zs" aria-controls="zs" role="tab" data-toggle="tab">周松 - ZS</a></li>
+                                        <li role="presentation"><a href="#zzc" aria-controls="zzc" role="tab" data-toggle="tab">曾智超 - ZZC</a></li>
+                                        <li role="presentation"><a href="#bob" aria-controls="bob" role="tab" data-toggle="tab">马俞泽 - Bob</a></li>
+                                        <li role="presentation"><a href="#carina" aria-controls="carina" role="tab" data-toggle="tab">栾泓舟 - Carina</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+
+                            <style type="text/css">
+                            .tabvi{
+                                /*background-color: red;*/
+                                /*color: blue;*/
+                                width: auto;
+                                height: 600px;
+                                border-bottom: 1px solid rgb(213,213,213);
+                                border-left: 1px solid rgb(213,213,213);
+                                border-right: 1px solid rgb(213,213,213);
+                                padding: 20px;
+
+                            }
+                            </style>
+
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active tabvi">
+                                    <p class="lead"><span class="glyphicon glyphicon-ok"></span>&nbsp;群号: 489743138</p>
+                                    <p class="lead"><span class="glyphicon glyphicon-ok"></span>&nbsp;加群请添加验证信息: "来自官网"</p>
+
+
+
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade tabvi" id="zs">zs</div>
+                                <div role="tabpanel" class="tab-pane fade tabvi" id="zzc">zzc</div>
+                                <div role="tabpanel" class="tab-pane fade tabvi" id="bob">bob</div>
+                                <div role="tabpanel" class="tab-pane fade tabvi" id="carina">carina</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,17 +199,9 @@
             </div>
         </div>
     </div>
-
     <aside id="sdnav" class="fadeIn animateDelay2">
         <a href="#home" id="betop" class="betop"></a>
     </aside>
-
-
-    
-    
-
-
-
     <footer>
         © 2015 hackcraft.ziorix.com | Webpage Designed By <a href="http://ziorix.com">@ZS</a>
         <br> Sponsored By <a href="http://ziorix.com">@ZS</a>, <a href="http://www.weibo.com/howgelivable">曾老师</a> 和 <a href="http://www.bobiscoming.com">聚力星系论坛</a>
@@ -200,24 +225,31 @@
 
         var getImgInsert = document.getElementById('insertImg');
         getImgInsert.appendChild(GetQQGroupImage);
+
     }
     </script>
     <script type="text/javascript">
-        $("#betop").click(function(q) {
-            q.preventDefault();
-            $("html body").animate({
-                scrollTop: 0
-            }, 1000, function() {})
-        });
-        $(window).scroll(function() {
-            var q = $(window).scrollTop();
-            if (q > 0) {
-                $("#betop").fadeIn()
-            } else {
-                $("#betop").fadeOut()
-            }
-        });
+    $('#myTab a').click(function(e) {
+        e.preventDefault();
+        $(this).tab('show');
 
+    })
+
+
+    $("#betop").click(function(q) {
+        q.preventDefault();
+        $("html body").animate({
+            scrollTop: 0
+        }, 1000, function() {})
+    });
+    $(window).scroll(function() {
+        var q = $(window).scrollTop();
+        if (q > 0) {
+            $("#betop").fadeIn()
+        } else {
+            $("#betop").fadeOut()
+        }
+    });
     </script>
     <!-- <script src="assets/js/custom.js"></script> -->
 </body>
