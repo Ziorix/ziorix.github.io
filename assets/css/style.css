@@ -1,4 +1,4 @@
-﻿
+
 /*=============================================================
     Authour URL: www.designbootstrap.com
 
@@ -28,7 +28,7 @@ body {
 
 section {
     padding-top: 80px;
-    padding-bottom: 120px;
+/*     padding-bottom: x120px; */
 }
 
 .head-set {
