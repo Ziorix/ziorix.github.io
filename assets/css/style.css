@@ -173,11 +173,11 @@ footer {
     font-size: 15px;
     text-align: center;
     font-weight: 900;
-    background-color: rgba(35, 133, 161, 0.8);
+    background-color: rgba(35, 133, 161, 0.6);
     color: #fff;
 }
 
     footer a, footer a:hover {
         color: #fff;
-        text-decoration: none;
+        /*text-decoration: none;*/
     }
