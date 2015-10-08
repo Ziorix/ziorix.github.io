@@ -74,7 +74,7 @@ section {
 /*STYLE OF BACKGROUND IMAGE*/
 
 #home {
-    background: url(http://www.asqql.com/upfile/tmp/20151007/20151007155753_93671.png) no-repeat center center;
+    background: url(../img/back.jpeg) no-repeat center center;
     /*Full Witdth background image*/
     padding: 0;
     -webkit-background-size: cover;
