@@ -244,6 +244,7 @@ section {
 footer {
     padding: 20px;
     font-size: 15px;
+    font-family: "StructrBo", sans-serif;
     text-align: center;
     font-weight: 900;
     background-color: rgb(102,102,102);
