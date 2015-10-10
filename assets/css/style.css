@@ -39,6 +39,46 @@ section {
 .pad-bottom {
     padding-bottom: 60px;
 }
+@font-face {
+    font-family: 'CIRCLED';
+    src: url('fonts/CIRCLE.eot');
+    src: local('☺'), 
+    url('../fonts/CIRCLE.woff') format('woff'), 
+    url('../fonts/CIRCLE.ttf') format('truetype'), 
+    url('../fonts/CIRCLE.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StructrRe';
+    src: url('fonts/Structr Regular.eot');
+    src: local('☺'), 
+    url('../fonts/Structr Regular.woff') format('woff'), 
+    url('../fonts/Structr Regular.ttf') format('truetype'), 
+    url('../fonts/Structr Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StructrMe';
+    src: url('fonts/Structr Medium.eot');
+    src: local('☺'), 
+    url('../fonts/Structr Medium.woff') format('woff'), 
+    url('../fonts/Structr Medium.ttf') format('truetype'), 
+    url('../fonts/Structr Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StructrBo';
+    src: url('fonts/Structr Bold.eot');
+    src: local('☺'), 
+    url('../fonts/Structr Bold.woff') format('woff'), 
+    url('../fonts/Structr Bold.ttf') format('truetype'), 
+    url('../fonts/Structr Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 /*================================
@@ -47,7 +87,7 @@ section {
 
 .navbar-default {
     /*opacity: 0.5;*/
-    background-color: rgba(35, 133, 161, 0.8);
+    background-color: rgba(102,102,102,0.8);
     border-color: transparent;
     color: #fff;
 }
@@ -74,33 +114,34 @@ section {
 /*STYLE OF BACKGROUND IMAGE*/
 
 #home {
-    background: url(../img/back.jpeg) no-repeat center center;
+    background: url(../img/back.jpg) no-repeat center center;
     /*Full Witdth background image*/
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
     min-height: 600px;
+    color: white;
 }
 
 
 /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
 
 #home .overlay {
-    padding-top: 90px;
-    background-color: rgba(35, 133, 161, 0.75);
-    /*.75 opacity of the color so that background image is visible*/
+    padding-top: 110px;
+    background-color: rgba(255,255,255,0.4);
+    .75 opacity of the color so that background image is visible
     min-height: 600px;
     color: #fff;
 }
 
-#home h1 {
+/*#home h1 {
     padding-top: 80px;
     font-weight: 900;
     font-size: 100px;
     font-family: 'Browallia New';
 }
-
+*/
 
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
 
@@ -205,7 +246,7 @@ footer {
     font-size: 15px;
     text-align: center;
     font-weight: 900;
-    background-color: rgba(35, 133, 161, 0.6);
+    background-color: rgb(102,102,102);
     color: #fff;
 }
 
