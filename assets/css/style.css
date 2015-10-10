@@ -130,7 +130,14 @@ section {
 
 /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
 
-
+/*#home .overlay {
+    padding-top: 110px;
+    background-color: rgba(255,255,255,0.4);
+    .75 opacity of the color so that background image is visible
+    min-height: 600px;
+    color: #fff;
+}
+*/
 /*#home h1 {
     padding-top: 80px;
     font-weight: 900;
