@@ -7,13 +7,20 @@
   -ms-user-select: none;
   user-select: none;
 }*/
-#price_container{
-  font-family: 
-  width:80%;
-  min-width:1100px;
-  min-height:500px;
-  margin:3% auto 0 auto;
+@media screen and (max-width: 1680px) and (min-width: 700px) {
+  #price_container{
+    font-family: StructrBo;
+    min-width:400px;
+    min-height:500px;
+    margin:3% auto 0 auto;
+  }
 }
+@media screen and (max-width: 680px) {
+  #price_container{
+    display: none;
+  }
+}
+
 .price_pricetab{
   width:20%;
   min-width:220px;
