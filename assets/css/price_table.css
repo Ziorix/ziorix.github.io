@@ -19,6 +19,9 @@
   #price_container{
     display: none;
   }
+  #responsive_price_container{
+    display: inline !important;
+  }
 }
 
 .price_pricetab{
