@@ -15,7 +15,7 @@
     margin:3% auto 0 auto;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1210px) {
   #price_container{
     display: none;
   }
