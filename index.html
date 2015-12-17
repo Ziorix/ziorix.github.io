@@ -64,11 +64,19 @@
             <div class="jumbotron" id="header">
                 <h1 style="font-size:520%;font-family: StructrRe;">HackCraft</h1>
                 <p style="font-size:180%;">February &nbsp;&bull;&nbsp; ShangHai</p>
-                <p><a class="btn btn-primary btn-lg" id="but" onclick="jump();" role="button">Learn more</a></p>
+                <p>
+                    <div class="btn-group" role="group" aria-label="...">
+                         <a class="btn btn-primary btn-lg" id="but" onclick="jump1();" role="button">&nbsp;中文&nbsp;</a>
+                         <a class="btn btn-primary btn-lg" id="but" onclick="jump2();" role="button">English</a>
+                    </div>
+                </p>
 
                 <script type="text/javascript">
-                function jump () {
-                    window.location.href='main.html';
+                function jump1 () {
+                    window.location.href='cn/main.html';
+                }
+                function jump2 () {
+                    window.location.href='en/main.html';
                 }
                 </script>
 
