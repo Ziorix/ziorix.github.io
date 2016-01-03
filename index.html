@@ -54,7 +54,7 @@
                 font-family: StructrBo;
                 color: white;
             }
-            
+
             #but {
                 background-color: rgba(102, 102, 102, 0.7);
                 margin-top: 30px;
@@ -64,9 +64,11 @@
             <div class="jumbotron" id="header">
                 <h1 style="font-size:520%;font-family: StructrRe;">HackCraft</h1>
                 <p style="font-size:180%;">February &nbsp;&bull;&nbsp; ShangHai</p>
+                <p style="font-size:200%;font-family:YueHei;">*&nbsp;Now ready for registration&nbsp;*</p>
                 <p>
                     <div class="btn-group" role="group" aria-label="...">
-                         <a class="btn btn-primary btn-lg" id="but" onclick="jump1();" role="button">&nbsp;中文&nbsp;</a>
+                         <a style='font-family:YueHei'class="btn btn-primary btn-lg" id="but" onclick="jump1();" role="button">&nbsp;中文&nbsp;</a>
+                         <a class="btn btn-primary btn-lg" id="but" onclick="jump3();" role="button">&nbsp;Enroll&nbsp;</a>
                          <a class="btn btn-primary btn-lg" id="but" onclick="jump2();" role="button">English</a>
                     </div>
                 </p>
@@ -77,6 +79,8 @@
                 }
                 function jump2 () {
                     window.location.href='en/main.html';
+                }function jump3 () {
+                    window.location.href='enroll.html';
                 }
                 </script>
 

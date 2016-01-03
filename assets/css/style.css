@@ -10,7 +10,7 @@
     100% Free To use For Personal And Commercial Use.
 
     IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
+
 ========================================================  */
 
 
@@ -40,11 +40,22 @@ section {
     padding-bottom: 60px;
 }
 @font-face {
+    font-family: 'YueHei';
+    src: url('../fonts/yuehei-webfont.eot');
+    src: url('../fonts/yuehei-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yuehei-webfont.woff2') format('woff2'),
+         url('../fonts/yuehei-webfont.woff') format('woff'),
+         url('../fonts/yuehei-webfont.ttf') format('truetype'),
+         url('../fonts/yuehei-webfont.svg#rtws_yuegothic_tXLtcompressed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'CIRCLED';
     src: url('fonts/CIRCLE.eot');
-    src: local('☺'), 
-    url('../fonts/CIRCLE.woff') format('woff'), 
-    url('../fonts/CIRCLE.ttf') format('truetype'), 
+    src: local('☺'),
+    url('../fonts/CIRCLE.woff') format('woff'),
+    url('../fonts/CIRCLE.ttf') format('truetype'),
     url('../fonts/CIRCLE.svg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -52,9 +63,9 @@ section {
 @font-face {
     font-family: 'StructrRe';
     src: url('fonts/Structr Regular.eot');
-    src: local('☺'), 
-    url('../fonts/Structr Regular.woff') format('woff'), 
-    url('../fonts/Structr Regular.ttf') format('truetype'), 
+    src: local('☺'),
+    url('../fonts/Structr Regular.woff') format('woff'),
+    url('../fonts/Structr Regular.ttf') format('truetype'),
     url('../fonts/Structr Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -62,9 +73,9 @@ section {
 @font-face {
     font-family: 'StructrMe';
     src: url('fonts/Structr Medium.eot');
-    src: local('☺'), 
-    url('../fonts/Structr Medium.woff') format('woff'), 
-    url('../fonts/Structr Medium.ttf') format('truetype'), 
+    src: local('☺'),
+    url('../fonts/Structr Medium.woff') format('woff'),
+    url('../fonts/Structr Medium.ttf') format('truetype'),
     url('../fonts/Structr Medium.svg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -72,9 +83,9 @@ section {
 @font-face {
     font-family: 'StructrBo';
     src: url('fonts/Structr Bold.eot');
-    src: local('☺'), 
-    url('../fonts/Structr Bold.woff') format('woff'), 
-    url('../fonts/Structr Bold.ttf') format('truetype'), 
+    src: local('☺'),
+    url('../fonts/Structr Bold.woff') format('woff'),
+    url('../fonts/Structr Bold.ttf') format('truetype'),
     url('../fonts/Structr Bold.svg') format('svg');
     font-weight: normal;
     font-style: normal;
